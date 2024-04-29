@@ -1,0 +1,386 @@
+// @mixin font-style($size, $lineHeight, $letterSpacing, $weight, $family) {
+//     font-size: $size;
+//     line-height: $lineHeight;
+//     letter-spacing: $letterSpacing;
+//     font-weight: $weight;
+//     font-family: $family;
+// }
+
+// @each $alias,
+// $props in $fonts {
+//     $family: map-get($props, 'family');
+//     $sizes: map-get($props, 'sizes');
+
+//     @each $sizeKey,
+//     $sizeProps in $sizes {
+//         $size: map-get($sizeProps, 'size');
+//         $lineHeight: map-get($sizeProps, 'lineHeight');
+//         $letterSpacing: map-get($sizeProps, 'letterSpacing');
+//         $weight: map-get($sizeProps, 'weight');
+
+//         .font-#{$alias}-#{$sizeKey} {
+//             @include font-style($size, $lineHeight, $letterSpacing, $weight, $family);
+//         }
+//     }
+// }
+
+
+
+
+// @mixin font-style($size, $lineHeight, $letterSpacing, $weight, $family-list) {
+//     font-size: $size;
+//     line-height: unquote($lineHeight);
+//     letter-spacing: unquote($letterSpacing);
+//     font-weight: $weight;
+
+//     // Create a correct font-family string
+//     $family-str: '';
+//     @each $family in $family-list {
+//         // Check if it's the last item; if not, add a comma
+//         // $family-str: $family-str + $family + if(index($family-list, $family) != length($family-list), ', ', '');
+//         $family-str: $family-str + $family + if(index($family-list, $family) != length($family-list), ', ', '');
+//     }
+//     font-family: unquote($family-str);
+// }
+
+
+// @each $alias, $props in $fonts {
+//     $family-list: map-get($props, 'family');
+//     $sizes: map-get($props, 'sizes');
+
+//     @each $sizeKey, $sizeProps in $sizes {
+//         $size: map-get($sizeProps, 'size');
+//         $lineHeight: map-get($sizeProps, 'lineHeight');
+//         $letterSpacing: map-get($sizeProps, 'letterSpacing');
+//         $weight: map-get($sizeProps, 'weight');
+
+//         .font-#{$alias}-#{$sizeKey} {
+//             @include font-style($size, $lineHeight, $letterSpacing, $weight, $family-list);
+//         }
+//     }
+// }
+
+
+
+// @mixin font-style($size, $lineHeight, $letterSpacing, $weight, $family-list) {
+//     font-size: $size;
+//     line-height: unquote($lineHeight);
+//     letter-spacing: unquote($letterSpacing);
+//     font-weight: $weight;
+
+//     // Create a correct font-family string
+//     $family-str: '';
+//     @for $i from 1 through length($family-list) {
+//         $family: nth($family-list, $i);
+//         $family-str: $family-str + $family + if($i != length($family-list), ', ', '');
+//     }
+//     font-family: unquote($family-str);
+// }
+
+// @each $alias, $props in $fonts {
+//     $family-list: map-get($props, 'family');
+//     $sizes: map-get($props, 'sizes');
+
+//     @each $sizeKey, $sizeProps in $sizes {
+//         $size: map-get($sizeProps, 'size');
+//         $lineHeight: map-get($sizeProps, 'lineHeight');
+//         $letterSpacing: map-get($sizeProps, 'letterSpacing');
+//         $weight: map-get($sizeProps, 'weight');
+
+//         .font-#{$alias}-#{$sizeKey} {
+//             @include font-style($size, $lineHeight, $letterSpacing, $weight, $family-list);
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+// @mixin font-style($size, $lineHeight, $letterSpacing, $weight, $family) {
+//     font-size: $size;
+//     line-height: unquote($lineHeight);
+//     letter-spacing: unquote($letterSpacing);
+//     font-weight: $weight;
+//     font-family: $family;
+// }
+
+
+
+// @each $alias, $props in $fonts {
+//     $family: map-get($props, 'family');
+//     $sizes: map-get($props, 'sizes');
+
+//     @each $sizeKey, $sizeProps in $sizes {
+//         $size: map-get($sizeProps, 'size');
+//         $lineHeight: map-get($sizeProps, 'lineHeight');
+//         $letterSpacing: map-get($sizeProps, 'letterSpacing');
+//         $weight: map-get($sizeProps, 'weight');
+
+//         .font-#{$alias}-#{$sizeKey} {
+//             @include font-style($size, $lineHeight, $letterSpacing, $weight, $family);
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+// @mixin font-style($size, $lineHeight, $letterSpacing, $weight, $family) {
+//     font-size: $size;
+//     line-height: unquote($lineHeight);
+//     letter-spacing: unquote($letterSpacing);
+//     font-weight: $weight;
+//     font-family: $family;
+// }
+
+// @each $alias, $props in $fonts {
+//     $family: map-get($props, 'family');
+//     $files: map-get($props, 'files');
+
+//     @each $fileFormat, $file in $files {
+//         @font-face {
+//             font-family: $family;
+//             src: url(#{$file}) format(#{$fileFormat});
+//             font-display: $fontDisplay;
+//         }
+//     }
+
+//     $sizes: map-get($props, 'sizes');
+
+//     @each $sizeKey, $sizeProps in $sizes {
+//         $size: map-get($sizeProps, 'size');
+//         $lineHeight: map-get($sizeProps, 'lineHeight');
+//         $letterSpacing: map-get($sizeProps, 'letterSpacing');
+//         $weight: map-get($sizeProps, 'weight');
+
+//         .font-#{$alias}-#{$sizeKey} {
+//             @include font-style($size, $lineHeight, $letterSpacing, $weight, $family);
+//         }
+//     }
+// }
+
+
+
+
+// $files: (
+//   woff: "@fontsource/space-grotesk/files/space-grotesk-latin-500-normal.woff"
+//   woff2: "@fontsource/space-grotesk/files/space-grotesk-latin-500-normal.woff2"
+//   ttf: "@fontsource/space-grotesk/files/space-grotesk-latin-500-normal.ttf"
+// );
+
+
+
+
+
+
+// @mixin font-faces($fonts) {
+//   @each $font, $details in $fonts {
+//     $name: map-get($details, name);
+//     $files: map-get($details, files);
+//     $family: map-get($details, family);
+
+//     @font-face {
+//       font-family: nth($family, 1);
+//       font-style: normal;
+//       font-weight: map-get($details, sizes, normal, weight); // Default to normal weight if not specified
+//       src: local('#{$name}');
+      
+//       // Include WOFF file if available
+//       @if map-has-key($files, 'woff') {
+//         src: append(src, url("#{map-get($files, 'woff')}") format('woff'));
+//       }
+      
+//       // Include WOFF2 file if available
+//       @if map-has-key($files, 'woff2') {
+//         src: append(src, url("#{map-get($files, 'woff2')}") format('woff2'));
+//       }
+      
+//       // Include TTF file if available
+//       @if map-has-key($files, 'ttf') {
+//         src: append(src, url("#{map-get($files, 'ttf')}") format('truetype'));
+//       }
+
+//       // Include EOT file if available
+//       @if map-has-key($files, 'eot') {
+//         src: append(src, url("#{map-get($files, 'eot')}") format('embedded-opentype'));
+//       }
+
+//       // Include SVG file if available
+//       @if map-has-key($files, 'svg') {
+//         src: append(src, url("#{map-get($files, 'svg')}") format('svg'));
+//       }
+
+//       // Include OTF file if available
+//       @if map-has-key($files, 'otf') {
+//         src: append(src, url("#{map-get($files, 'otf')}") format('opentype'));
+//       }
+//     }
+//   }
+// }
+
+// Usage
+// @include font-faces($fonts);
+
+
+
+
+
+
+
+@function map-to-string($map) {
+    $string: '';
+  
+    @each $key, $value in $map {
+      $string: $string + '(' + $key + ': ' + $value + '), ';
+    }
+  
+    @return $string;
+}
+
+
+@function map-get-if-has-key($map, $key) {
+    @if map-has-key($map, $key) {
+      @return map-get($map, $key);
+    } @else {
+      @return 'null'; // Return null if key doesn't exist
+    }
+  }
+
+
+
+
+@function nested-map-get($map, $outerKey, $innerKey) {
+    $outer: map-get($map, $outerKey);
+  
+    @if $outer {
+      $inner: map-get($outer, $innerKey);
+  
+      @if $inner {
+        @return $inner;
+      } @else {
+        @return false;
+      }
+    } @else {
+      @return false;
+    }
+}
+
+
+@mixin font-style($size, $lineHeight, $letterSpacing, $weight, $family) {
+    font-size: $size;
+    line-height: unquote($lineHeight);
+    letter-spacing: unquote($letterSpacing);
+    font-weight: $weight;
+    font-family: $family;
+}
+
+
+// create @font-face for all imported fonts
+@each $alias, $props in $fonts {
+    $family: map-get($props, 'family');
+    $sizes: map-get($props, 'sizes');
+
+
+    @each $font, $details in $fonts {
+        $name: map-get($details, name);
+        $files: map-get($details, files);
+        $family: map-get($details, family);
+
+       
+        $weight: map-get($details, sizes, normal, weight); // Default to normal weight if not specified
+        
+        $srcList: (); // Initialize an empty list for sources
+
+        $srcString: '';
+        $srcCounter: 0;
+
+
+        $woff: nested-map-get($details, files, woff);
+        @if $woff {
+            @if $srcCounter > 0 {
+                $srcString: $srcString + ',';
+            }
+            $srcString: $srcString + 'url(#{$woff}) format(woff)';
+            $srcCounter: $srcCounter + 1;
+        }
+
+        $woff2: nested-map-get($details, files, woff2);
+        @if $woff2 {
+            @if $srcCounter > 0 {
+                $srcString: $srcString + ',';
+            }
+            $srcString: $srcString + 'url(#{$woff2}) format(woff2)';
+            $srcCounter: $srcCounter + 1;
+        }
+
+        $ttf: nested-map-get($details, files, ttf);
+        @if $ttf {
+            @if $srcCounter > 0 {
+                $srcString: $srcString + ',';
+            }
+            $srcString: $srcString + 'url(#{$ttf}) format($ttf ';
+            $srcCounter: $srcCounter + 1;
+        }
+
+        $eot: nested-map-get($details, files, eot);
+        @if $eot {
+            @if $srcCounter > 0 {
+                $srcString: $srcString + ',';
+            }
+            $srcString: $srcString + 'url(#{$eot}) format(eot)';
+            $srcCounter: $srcCounter + 1;
+        }
+
+        $svg: nested-map-get($details, files, svg);
+        @if $svg {
+            @if $srcCounter > 0 {
+                $srcString: $srcString + ',';
+            }
+            $srcString: $srcString + 'url(#{$svg}) format(svg)';
+            $srcCounter: $srcCounter + 1;
+        }
+
+        $otf: nested-map-get($details, files, otf);
+        @if $otf {
+            @if $srcCounter > 0 {
+                $srcString: $srcString + ',';
+            }
+            $srcString: $srcString + 'url(#{$otf}) format(otf)';
+            $srcCounter: $srcCounter + 1;
+        }
+
+
+        @font-face {
+            font-family: nth($family, 1);
+            font-weight: $weight;
+            src: unquote($srcString);
+        }
+        
+    }
+}
+
+
+
+// create all font sizes helper classes
+@each $alias, $props in $fonts {
+    $family: map-get($props, 'family');
+    $sizes: map-get($props, 'sizes');
+
+    @each $sizeKey, $sizeProps in $sizes {
+        $size: map-get($sizeProps, 'size');
+        $lineHeight: map-get($sizeProps, 'lineHeight');
+        $letterSpacing: map-get($sizeProps, 'letterSpacing');
+        $weight: map-get($sizeProps, 'weight');
+
+        .font-#{$alias}-#{$sizeKey} {
+            @include font-style($size, $lineHeight, $letterSpacing, $weight, $family);
+        }
+    }
+}

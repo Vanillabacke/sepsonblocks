@@ -1,0 +1,15 @@
+// .overflow-wrapper {
+//     outline: 1px solid #ff00cc;
+// }
+
+vc-hook-tester {
+    outline: 1px solid #ff00cc;
+    display: flex;
+    overflow: hidden;
+
+    .overflow-wrapper {
+        // width: 40%;
+        overflow: hidden;
+        outline:1px solid #50077a;
+    }
+}

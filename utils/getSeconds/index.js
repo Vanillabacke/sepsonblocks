@@ -1,0 +1,1 @@
+export default function getSeconds 	(value) { return Math.trunc(value % 60, 10); } 

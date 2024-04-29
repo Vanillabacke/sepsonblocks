@@ -1,0 +1,23 @@
+body {
+    padding: 80px;
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    background: #e9007e;
+    border-radius: 10px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    padding: "5px";
+    background: rgba(255, 255, 255, 0.2);
+    margin: 15px 0;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  

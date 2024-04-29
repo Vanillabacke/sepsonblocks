@@ -1,0 +1,1 @@
+export default function getHours 	(value) { return Math.trunc((value / 60 / 60) % 60, 10); } 	

@@ -1,0 +1,164 @@
+[data-type="vc/grid"] {
+
+
+    .create-columns-base {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: flex-start;
+        margin-top: 6px;
+    }
+    
+    .grid-preset-button {
+        padding: 0;
+        // height: auto;
+        width: 100px;
+        height: 40px;
+        display: flex;
+        box-shadow: 0 0 0 2px var(--wp-admin-theme-color);
+        // box-shadow: inset 0 0 0 2px #fff;
+        border-radius: 2px;
+        
+        .grid-preset-col {
+            box-shadow: inset 0 0 0 1px var(--wp-admin-theme-color);
+            box-shadow: inset 0 0 0 1px #fff;
+            height: 100%;
+            /* padding: 5px; */
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+
+
+    .create-columns-base {
+        .components-base-control__help {
+            margin-top: 0;
+        }
+        .create-columns-button {
+            max-height: 30px;
+            margin-left: 4px;
+        }
+    }
+
+
+    #{$namespace}-row {
+        margin-top: 14px; //28px;
+        margin-bottom: 14px; //28px;
+
+        margin-left: 0;
+        margin-right: 0;
+
+        &,
+        &:hover:not(.is-selected) {
+            box-shadow: 0 0 0 2px #ff0040ed;
+            box-shadow: 0 0 0 1px #e0e0e0;
+        }
+    }
+
+
+
+    .grid-breakpoint-preview {
+        &.active-preview {
+            background-color: #e0e0e0;
+            background-color: #f6f7f7;
+
+            // --stripes-color: rgb(79 148 212 / 32%);
+            --stripes-color: rgba(79, 148, 212, 0.32);
+            
+            background-image: linear-gradient(45deg,
+                var(--stripes-color) 12.5%,
+                transparent 12.5%,transparent 50%,
+                var(--stripes-color) 50%,
+                var(--stripes-color) 62.5%,
+                transparent 62.5%,transparent 100%
+            );
+            background-size: 5.66px 5.66px;
+            // background-size: 8px 8px;
+
+
+            &::before {
+
+                // content: "Preview";
+                // display: inline-block;
+                // margin: 0 16px;
+                // background: var(--wp-admin-theme-color);
+                // color: #fff;
+                // padding: 1px 10px;
+                // font-size: 10px;
+                // border-radius: 2px;
+                // position: absolute;
+                // left: 50%;
+                // transform: translate(-50%, -6px);
+
+
+
+                // content: "Preview";
+                // display: inline-block;
+                // margin: 0 16px;
+                // // background:var(--wp-admin-theme-color);
+                // // color: #fff;
+                // // padding: 6px; 
+
+
+                // background: var(--wp-admin-theme-color);
+                // color: #fff;
+                // padding: 1px 10px;
+                // font-size: 13px;
+                // border-radius: 2px;
+                // font-weight: 400;
+                
+                // font-weight: bold;
+                // color: var(--wp-admin-theme-color);
+
+                // text-shadow:
+                //     -1px -1px 0 #fff,  
+                //     1px -1px 0 #fff,
+                //     -1px 1px 0 #fff,
+                //     1px 1px 0 #fff;
+            }
+
+            padding-top: 16px; 
+            padding-bottom: 16px;
+            
+            .grid-breakpoint-preview-inner {
+                box-shadow: 0 0 0 1px var(--wp-admin-theme-color);
+                // border-radius: 1px;
+                background-color: #fff;
+                border-left: 4px solid #fff;
+                border-right: 4px solid #fff;
+                // box-shadow: 0 0 0 8px #fff;
+                // padding-left: 16px;
+                // padding-right: 16px;
+                // margin: 16px auto;
+                margin-left: auto;
+                margin-right: auto;
+                
+                position: relative;
+
+
+                // &::before {
+                .grid-breakpoint-preview-label {
+                    content: "Preview";
+                    display: inline-block;
+                    margin: 0;
+                    background: var(--wp-admin-theme-color);
+                    color: #fff;
+                    padding: 1px 10px;
+                    font-size: 10px;
+                    border-radius: 2px;
+                    position: absolute;
+                    transform: translate(0, -20px);
+                    left: -5px;
+                }
+                
+                #{$namespace}-row {
+                    box-shadow: none;
+
+                }
+            }
+        }
+    }
+}

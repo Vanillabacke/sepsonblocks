@@ -1,0 +1,72 @@
+@import "../../../../font/font.mixin.scss";
+
+.hero {
+    background-size: cover;
+    // margin: 20px;
+    outline: 2px solid #f0c;
+    
+
+    position: relative;
+
+    display: flex;
+
+    
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+    // width: 100%;
+    min-height: 65vh;
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+
+    color: var(--navi);
+
+    // .components-button.editor-post-featured-image__toggle {
+    .image-preview-selector {
+        position: absolute;
+        // box-sizing:
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 50%;
+    }
+    
+    .hero-inner {
+        position: relative;
+        outline: 2px solid #f0c;
+
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 50%;
+        margin: 60px;
+        align-items: flex-start;
+    }
+
+    .hero-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+    }
+
+    .font-headline {
+        @include font-headline;
+    }
+    .font-subline {
+        @include font-subline;
+    }
+
+    .cta {
+        margin-top: 35px;
+    }
+}

@@ -1,0 +1,84 @@
+// @import "@fontsource/space-grotesk";
+@import "../../global/font.scss";
+
+
+// @font-face {
+// 	font-family: 'Raleway';
+// 	font-style: normal;
+// 	font-weight: 400;
+// 	src: local('Raleway'),
+// 		url('./raleway/raleway-v19-latin-regular.woff2') format('woff2'),
+// 		url('./raleway/raleway-v19-latin-regular.woff') format('woff');
+// }
+
+
+// @font-face {
+// 	font-family: 'Space Grotesk';
+// 	font-style: normal;
+// 	font-weight: 400;
+// 	src: local('Space Grotesk'),
+// 		url('@fontsource/space-grotesk/files/space-grotesk-latin-500-normal.woff') format('woff');
+// }
+
+// @font-face {
+// 	font-family: 'Space Grotesk';
+// 	font-style: normal;
+// 	font-weight: 400;
+// 	src: local('Space Grotesk'),
+// 		url('@fontsource/space-grotesk/files/space-grotesk-latin-500-normal.woff') format('woff'),
+// 		url('@fontsource/space-grotesk/files/space-grotesk-latin-500-normal.woff2') format('woff2'),
+// 		url('@fontsource/space-grotesk/files/space-grotesk-latin-500-normal.ttf') format('ttf');
+// }
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // background-color: #f0c;
+    // @if $debug {
+    //     background-color: $primaryColor;
+    // } @else  {
+    //     background-color: $secondaryColor;
+    // } 
+}
+
+body {
+    // font-family: 'Space Grotesk', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+
+collapsible-panel {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: black dashed 1px;
+
+    header {
+        // color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+
+// header {
+//     color: #fff;
+//     font-weight: bold;
+//     font-size: 40px !important;
+// }
+
+
+
+
+// parent-component child-component {
+//     outline: 2px solid #f0c; 
+// }

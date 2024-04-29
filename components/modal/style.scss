@@ -1,0 +1,57 @@
+// nav,
+vc-modal {
+    outline: 1px solid hsl(200, 100%, 40%);
+
+    position: relative;
+
+    // height: 30vh;
+
+    .close-modal {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .modal-wrapper {
+        position: relative;
+        // display: inline-flex;
+        display: flex;
+        outline: 1px solid hsl(192, 100%, 50%);
+
+
+        // transition: all cubic-bezier(.1,.5,.3,.9) var(--duration);
+        transition: height cubic-bezier(.1,.5,.3,.9) var(--duration),
+                    opacity cubic-bezier(.1,.5,.3,.9) var(--duration);
+        overflow: hidden;
+        width: var(--max-width);
+        height: 0px;
+        opacity: 0;
+
+        // .modal-inner {
+        //     transition: all cubic-bezier(.1,.5,.3,.9) var(--duration);
+        //     overflow: hidden;
+        //     height: 0px;
+        // }
+        .modal-inner {
+            position: absolute;
+            // top: 0
+        }
+
+        // &.modal-enter-done
+        &.modal-enter-active {
+            opacity: 1;
+            height: var(--max-height);
+            // .modal-inner {
+            // }
+        }
+
+        &.modal-enter-done {
+            transition: none;
+            opacity: 1;
+            height: var(--max-height);
+            // .modal-inner {
+            // }
+        }
+    }
+
+}

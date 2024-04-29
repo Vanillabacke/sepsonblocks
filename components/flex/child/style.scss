@@ -1,0 +1,26 @@
+.flex-wrapper {
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+
+        flex-direction: column;
+
+        // &.selected {
+        //     z-index: 99;
+        //     opacity: 0.4
+        // }
+
+
+        .reorder-handle {
+            // display: inline-block;
+            width: 20px;
+            width: 100%;
+            height: 20px;
+            background: #f0c;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    }
+}

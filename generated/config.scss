@@ -1,0 +1,184 @@
+$debug: true;
+$namespace: "vc";
+$packageName: "VanillaCraft Web Compontents";
+$colors: (
+  white: "#fff",
+  black: "#4a4a49",
+  baseColor: "#4a4a49",
+  primaryColor: "#e83363",
+  secondaryColor: "#4c9887",
+  backgroundColor: "#fff",
+  backgroundInvertedColor: "#4a4a49",
+  headerColor: "#4a4a49",
+  headerBackgroundColor: "#fff",
+  footerColor: "#ffffff",
+  footerBackgroundColor: "#e83363"
+);
+$fontFamilyBase: "sans";
+$fontFamilyHeadline: "sans";
+$fontDisplay: "swap";
+$fonts: (
+  reinaNeueBlack: (
+  name: "ReinaNeueBlack",
+  family: ("ReinaNeueBlack", "sans-serif"),
+  files: (
+  woff: "Fonts/ReinaNeueBlack/font.woff",
+  woff2: "Fonts/ReinaNeueBlack/font.woff2"
+),
+  sizes: (
+  small: (
+  size: 14px,
+  lineHeight: "1.4",
+  letterSpacing: normal,
+  weight: 400
+),
+  normal: (
+  size: 16px,
+  lineHeight: "1.6",
+  letterSpacing: normal,
+  weight: 400
+),
+  large: (
+  size: 18px,
+  lineHeight: "1.8",
+  letterSpacing: normal,
+  weight: 500
+),
+  xlarge: (
+  size: 24px,
+  lineHeight: "1.3",
+  letterSpacing: normal,
+  weight: 700
+)
+)
+),
+  openSans: (
+  name: "OpenSans",
+  family: ("Open ans", "sans-serif"),
+  files: (
+  woff: "@fontsource/open-sans/files/open-sans-latin-400-normal.woff",
+  woff2: "@fontsource/open-sans/files/open-sans-latin-400-normal.woff2"
+),
+  sizes: (
+  small: (
+  size: 14px,
+  lineHeight: "1.4",
+  letterSpacing: normal,
+  weight: 400
+),
+  normal: (
+  size: 16px,
+  lineHeight: "1.6",
+  letterSpacing: normal,
+  weight: 400
+),
+  large: (
+  size: 18px,
+  lineHeight: "1.8",
+  letterSpacing: normal,
+  weight: 500
+),
+  xlarge: (
+  size: 24px,
+  lineHeight: "1.3",
+  letterSpacing: normal,
+  weight: 700
+)
+)
+)
+);
+$easing: ".1,.5,.3,.9";
+$layout: (
+  mainMarginTop: 6rem,
+  columns: 12,
+  columnMargin: 5rem,
+  columnPadding: false
+);
+$breakpoints: ((
+  key: "xxl",
+  width: 1920,
+  icon: "tv",
+  index: 6,
+  label: "TV"
+), (
+  key: "xl",
+  width: 1600,
+  icon: "widescreen",
+  index: 5,
+  label: "Widescreen"
+), (
+  key: "l",
+  width: 1400,
+  icon: "desktop",
+  index: 4,
+  label: "Desktop"
+), (
+  key: "m",
+  width: 960,
+  icon: "tablet",
+  index: 3,
+  label: "Tablet"
+), (
+  key: "s",
+  width: 780,
+  icon: "mobile",
+  index: 2,
+  label: "Mobile"
+), (
+  key: "xs",
+  width: 540,
+  icon: "mobile",
+  index: 1,
+  label: "Small Mobile"
+), (
+  key: "default",
+  width: null,
+  icon: "all-devices",
+  index: 0,
+  label: "All Devices"
+));
+$breakpointUnit: "px";
+$breakpointObject: (
+  xxl: (
+  width: 1920,
+  icon: "tv",
+  index: 6,
+  label: "TV"
+),
+  xl: (
+  width: 1600,
+  icon: "widescreen",
+  index: 5,
+  label: "Widescreen"
+),
+  l: (
+  width: 1400,
+  icon: "desktop",
+  index: 4,
+  label: "Desktop"
+),
+  m: (
+  width: 960,
+  icon: "tablet",
+  index: 3,
+  label: "Tablet"
+),
+  s: (
+  width: 780,
+  icon: "mobile",
+  index: 2,
+  label: "Mobile"
+),
+  xs: (
+  width: 540,
+  icon: "mobile",
+  index: 1,
+  label: "Small Mobile"
+),
+  default: (
+  width: null,
+  icon: "all-devices",
+  index: 0,
+  label: "All Devices"
+)
+);

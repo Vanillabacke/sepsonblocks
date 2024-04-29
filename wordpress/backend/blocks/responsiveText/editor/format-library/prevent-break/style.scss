@@ -1,0 +1,114 @@
+
+
+.rich-text {
+    .prevent-break {
+        hyphens: none;
+        position: relative;
+
+        outline: 2px solid rgba(0,124,186,0.1);
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+        white-space: nowrap;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            // width: 8px;
+            // height: 1.25em;
+            position: absolute;
+            // top: 0.25em;
+            height: 8px;
+            left: -8px;
+            right: -4px;
+            // outline: 2px solid #00c;
+            border: 2px solid #007cba;
+            border-radius: 8px 8px 0px 0px;
+            // border-top: none;
+            // border-left: none;
+            // border-right: none;
+            border-bottom: none;
+            margin-left: 4px;
+
+            left: 50%;
+            right: initial;
+            width: 1em;
+            transform: translate(-50%, -4px);
+        }
+    
+        &::after {
+            content: "";
+            display: inline-block;
+            // width: 8px;
+            // height: 1.25em;
+            position: absolute;
+            // top: 0.25em;
+            height: 8px;
+            left: -8px;
+            right: -4px;
+            bottom: -0.35em;
+            // outline: 2px solid #00c;
+            border: 2px solid #007cba;
+            border-radius: 0px 0px 8px 8px;
+            border-top: none;
+            // border-left: none;
+            // border-right: none;
+            // border-bottom: none;
+            margin-left: 4px;
+
+            left: 50%;
+            right: initial;
+            width: 1em;
+            transform: translate(-50%, 4px);
+        }
+
+        &:hover {
+            background: rgba(0,124,186,0.1);
+        }
+    }
+
+
+    &:focus {
+        .prevent-break {
+            &[data-rich-text-format-boundary]{
+                background: none;
+                background: rgba(0,124,186,0.1);
+                // background: rgba(0,124,186,0.5);
+                // background: rgba(0,124,186,1);
+                // color: #fff;
+                // &::before,
+                // &::after {
+                //     // outline: 4px solid rgba(0,124,186,0.5);
+                //     // border-radius: 1px;
+                //     // background: rgba(0,124,186,0.5);
+                //     // outline: 4px solid rgba(0,124,186,1);
+                //     // background: rgba(0,124,186,1);
+                //     // border-color: #fff;
+                // }
+            }
+        }
+    }
+
+
+
+    &:focus {
+        .prevent-break {
+            &[data-rich-text-format-boundary]{
+                // background: none;
+
+                outline: 2px solid rgba(0,124,186,1);
+
+                &::before,
+                &::after {
+                    // outline: 4px solid rgba(0,124,186,0.5);
+                    // border-radius: 1px;
+                    // background: rgba(0,124,186,0.5);
+                    // outline: 4px solid rgba(0,124,186,1);
+                    // background: rgba(0,124,186,1);
+                    // border-color: #fff;
+
+                    // border-width: 4px;
+                }
+            }
+        }
+    }
+}

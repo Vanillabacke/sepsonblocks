@@ -1,0 +1,58 @@
+/* Debug CSS classes with colored outlines */
+.debug-outline-red { outline: 2px solid red; }
+.debug-outline-green { outline: 2px solid green; }
+.debug-outline-blue { outline: 2px solid blue; }
+.debug-outline-yellow { outline: 2px solid yellow; }
+.debug-outline-purple { outline: 2px solid purple; }
+.debug-outline-cyan { outline: 2px solid cyan; }
+.debug-outline-magenta { outline: 2px solid magenta; }
+.debug-outline-orange { outline: 2px solid orange; }
+.debug-outline-black { outline: 2px solid black; }
+.debug-outline-gray { outline: 2px solid gray; }
+
+/* Additional utility for highlighting without affecting layout */
+.debug-overlay-red { box-shadow: 0 0 0 2px red inset; }
+.debug-overlay-green { box-shadow: 0 0 0 2px green inset; }
+.debug-overlay-blue { box-shadow: 0 0 0 2px blue inset; }
+.debug-overlay-yellow { box-shadow: 0 0 0 2px yellow inset; }
+.debug-overlay-purple { box-shadow: 0 0 0 2px purple inset; }
+.debug-overlay-cyan { box-shadow: 0 0 0 2px cyan inset; }
+.debug-overlay-magenta { box-shadow: 0 0 0 2px magenta inset; }
+.debug-overlay-orange { box-shadow: 0 0 0 2px orange inset; }
+.debug-overlay-black { box-shadow: 0 0 0 2px black inset; }
+.debug-overlay-gray { box-shadow: 0 0 0 2px gray inset; }
+
+
+
+/* Debug CSS classes with colored outlines */
+.debug-outline-red { outline: 2px solid red; }
+.debug-outline-green { outline: 2px solid green; }
+.debug-outline-blue { outline: 2px solid blue; }
+
+/* Container and item styles for flex layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: stretch; /* Adjust as needed */
+    padding: 20px;
+    gap: 10px;
+
+    // display: flex;
+    // flex-wrap: nowrap;
+    // justify-content: flex-start;
+    // align-items: stretch;
+    // padding: 20px;
+    // gap: 10px;
+}
+
+.item {
+    flex: 1 1 auto; /* Adjust flex-basis as per data-size attribute */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Responsive breakpoint adjustments via JavaScript not reflected in CSS directly */

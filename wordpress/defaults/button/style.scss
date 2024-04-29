@@ -1,0 +1,71 @@
+// @import "./button.mixin.scss";
+// @import "../default.mixin.scss";
+// @import "../../fonts/font.mixin.scss";
+
+@import "./button.mixin.scss";
+@import "../default.mixin.scss";
+@import "../../font/font.mixin.scss";
+
+
+
+a,
+button {
+    &.cta {
+        @include make-button;
+    }
+}
+
+// a,
+// button {
+//     cursor: pointer;
+
+
+
+//     &.cta {
+
+//         text-decoration: none;
+
+//         --text-color: var(--navi);
+//         --background-color: var(--white);
+//         --border-color: var(--navi);
+        
+//         &.beige {
+//             --text-color: var(--beige);
+//             --background-color: var(--white);
+//             --border-color: var(--beige);
+//         }
+
+//         outline: none;
+//         border: none;
+
+//         color: var(--text-color);
+//         background-color: var(--background-color);
+
+//         outline: 1px solid var(--border-color);
+
+//         padding: 1rem 1rem;
+//         text-transform: uppercase;
+
+//         @include font-body-m;
+//         @include transitionAll;
+
+
+//         &:hover {
+
+//             --text-color: var(--white);
+//             --background-color: var(--navi);
+//             --border-color: var(--navi);
+
+
+//             &.beige {
+//                 --text-color: var(--navi);
+//                 --background-color: var(--beige);
+//                 --border-color: var(--beige);
+//             }
+
+//             // color: var(--white);
+//             // background-color: var(--navi);
+//             // border: var(--navi);
+//         }
+//     }
+// }

@@ -1,0 +1,1 @@
+export default function getMinutes 	(value) { return Math.trunc((value / 60) % 60, 10); } 

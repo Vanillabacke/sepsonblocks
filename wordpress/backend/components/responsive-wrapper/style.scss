@@ -1,0 +1,91 @@
+// .#{$namespace}-responsive-settings-wrapper {
+//     box-shadow: 0 0 0 2px #ff004033;
+//     padding: 8px;
+
+//     h2 {
+//         margin: 0;
+//     }
+    
+//     .#{$namespace}-responsive-settings-header {
+//         // box-shadow: 0 0 0 2px #006eff33;
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: nowrap;
+//         justify-content: space-between;
+//         align-items: center;
+
+//     }
+
+//     .#{$namespace}-responsive-settings-body {
+//         // box-shadow: 0 0 0 2px #09ff0033;
+
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: nowrap;
+//         justify-content: space-between;
+//         align-items: center;
+
+//         .breakpoint-adder {
+//             margin-left: 8px;
+//         }
+//         .components-base-control {
+//             margin-bottom: 0;
+//             width: 100%;
+//             .components-base-control__field {
+//                 margin-bottom: 0;
+//             }
+//         }
+//     }
+//     .#{$namespace}-responsive-settings-footer {
+//         // box-shadow: 0 0 0 2px #ffc40033;
+//     }
+// }
+
+
+// .#{$namespace}-responsive-breakpoint-switcher {
+//     .components-button-group{
+//         margin-left: 14px;
+//         margin-right: 8px;
+//     }
+    
+//     button.components-button {
+//         font-size: 10px;
+//         padding: 10px;
+//         height: 20px;
+//         box-shadow: none;
+//         border: 2px;
+//         // box-shadow: inset 0 0 0 1px #1e1e1e;
+//         box-shadow: inset 0 0 0 1px #e0e0e0;
+
+
+//         // &.breakpoint-remover {
+//         //     margin-left: 8px;
+//         // }
+
+//         // border-radius: 4px;
+//         &.is-primary {
+//             box-shadow: none;
+//         }
+//         &.is-destructive {
+//             box-shadow: inset 0 0 0 1px #cc1818;
+
+//             &:focus
+//             // &:focus-within,
+//             // &:active 
+//             {
+//                 box-shadow: inset 0 0 0 1px #cc1818;
+//                 background: #cc1818;
+//                 color: #fff;
+//             }
+//         }
+//     }
+
+//     &:first-child {
+//         margin-left: 0;
+//     }
+//     // button {
+//     //     margin-right: 4px;
+//     // }
+// }
+
+

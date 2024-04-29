@@ -1,0 +1,25 @@
+// grid.scss
+@mixin generate-columns($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-gap: $gap;
+}
+
+@mixin responsive-grid($breakpoints) {
+    @each $name, $size in $breakpoints {
+        @media (min-width: $size + 1px) {
+            @include generate-columns(map-get($columns, $name), map-get($columnMargin, $name));
+        }
+    }
+}
+
+.row {
+    @include responsive-grid($breakpoints);
+}
+
+.column {
+    @extend .row;
+    > * {
+        @include generate-columns(1, 0);
+    }
+}

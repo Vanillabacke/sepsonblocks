@@ -1,0 +1,226 @@
+@import "../defaults/default.mixin.scss";
+
+
+// Regular
+@mixin halcom-regular {
+    font-family: halcom, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin halcom-italic {
+    font-family: halcom, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+
+// Medium
+@mixin halcom-medium {
+    font-family: halcom, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin halcom-medium-italic {
+    font-family: halcom, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+
+// Bold
+@mixin halcom-bold {
+    font-family: halcom, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin halcom-bold-italic {
+    font-family: halcom, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+
+// Extra Bold
+@mixin halcom-extra-bold {
+    font-family: halcom, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+@mixin halcom-extra-bold-italic {
+    font-family: halcom, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+
+
+$font-mobile-breakpoint: 1366px; // 1024px 
+// breakpoints 960
+
+
+
+
+
+@mixin mobile {
+    @media (max-width: #{$font-mobile-breakpoint}) {
+        @content;
+    }
+}
+
+
+
+
+
+@mixin undelineText {
+    display: inline;
+
+    text-decoration: none;
+    background-image: linear-gradient(var(--border-color), var(--border-color));
+    background-position: 0% calc(100% - var(--border-weight) / 2);
+    background-repeat: no-repeat;
+    // background-size: 0% 2px;
+
+    transition: background-size .3s;
+
+    // background-size: 100% var(--border-weight);
+    background-size: 100% var(--border-weight);
+    @content;
+}
+
+
+@mixin font-hero {
+    @include halcom-extra-bold;
+
+    font-size: 100px;
+    line-height: 100px;
+
+    text-transform: uppercase;
+
+    --border-weight: 8px;
+    --border-color: var(--aqua);
+
+    a,
+    &.underline {
+        color: currentColor;
+        font-weight: inherit;
+        @include undelineText;
+
+        // &::after {
+        //     content: "";
+        //     display: flex;
+        //     margin-bottom: var(--border-weight);
+        // }
+    }
+
+    a {
+        @include transitionAll;
+
+        &:hover {
+            color: var(--aqua);
+        }
+    }
+
+
+    @include mobile {
+        font-size: 48px;
+        line-height: 52px;
+
+        --border-weight: 5px;
+    }
+}
+
+
+
+
+@mixin font-headline {
+    @include halcom-extra-bold;
+
+    font-size: 60px;
+    line-height: 64px;
+
+
+    --border-weight: 8px;
+    --border-color: var(--aqua);
+
+
+
+    &.underline {
+        // @extend .halcom-extra-bold;
+        // text-decoration: none;
+        @include undelineText;
+        color: currentColor;
+        --border-weight: 5px;
+    }
+
+
+    @include mobile {
+        font-size: 45px;
+        line-height: 50px;
+
+        --border-weight: 5px;
+    }
+}
+
+
+
+
+
+
+@mixin font-subline {
+    @include halcom-extra-bold;
+
+    font-size: 28px;
+    line-height: 34px;
+
+    @include mobile {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+
+
+
+@mixin font-body-m {
+    @include halcom-regular;
+
+    &.bold {
+        @include halcom-bold;
+    }
+
+    font-size: 19px;
+    line-height: 26px;
+
+    @include mobile {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+
+
+@mixin font-body-s {
+    @include halcom-regular;
+
+    &.bold {
+        @include halcom-bold;
+    }
+
+    font-size: 15px;
+    line-height: 20px;
+
+    @include mobile {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}

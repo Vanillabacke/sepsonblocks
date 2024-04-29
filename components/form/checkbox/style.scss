@@ -1,0 +1,28 @@
+// nav,
+vc-navivation,
+[is="vc-navigation"]{
+    outline: 1px solid hsl(200, 100%, 40%);
+
+    position: relative;
+
+    height: 30vh;
+
+    .navigation-wrapper {
+        // position: absolute;
+        display: inline-flex;
+        outline: 1px solid hsl(192, 100%, 50%);
+    }
+
+}
+
+
+
+
+// custom css
+nav {
+    ul {
+        li {
+            white-space: nowrap;
+        }
+    }
+}
